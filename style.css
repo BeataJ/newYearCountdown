@@ -71,4 +71,8 @@ h1 {
     font-size: 12px;
     margin: 0;
   }
+
+  .time small {
+    font-size: 10px;
+  }
 }
