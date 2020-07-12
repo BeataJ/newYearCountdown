@@ -16,7 +16,6 @@ function updateCountdown() {
   const h = Math.floor((diff / 1000 / 60 / 60) % 24);
   const m = Math.floor((diff / 1000 / 60) % 60);
   const s = Math.floor(diff / 1000) % 60;
-
-  console.log(s);
 }
-updateCountdown();
+
+setInterval(updateCountdown, 1000);
