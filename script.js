@@ -16,6 +16,11 @@ function updateCountdown() {
   const h = Math.floor((diff / 1000 / 60 / 60) % 24);
   const m = Math.floor((diff / 1000 / 60) % 60);
   const s = Math.floor(diff / 1000) % 60;
+
+  days.innerText = d;
+  hours.innerText = h < 10 ? '0' + h : h;
+  minutes.innerText = m < 10 ? '0' + m : m;
+  seconds.innerText = s < 10 ? '0' + s : s;
 }
 
 setInterval(updateCountdown, 1000);
